@@ -22,6 +22,60 @@ body{
     font-family: var(--font-heading);
 }
 
+#hamburguer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 3rem;
+    width: 3rem;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    z-index: 11;
+    cursor: pointer;
+}
+
+#hamburguer .linha{
+    width: 100%;
+    height: 0.5rem;
+    background-color: #fff;
+    box-shadow: 0 .2rem .2rem #000;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    position: fixed;
+    right: -20rem;
+    background: transparent;
+    backdrop-filter: blur(.9rem);
+    border: .1rem solid white;
+    height: 100vh;
+    width: 20rem;
+    z-index: 10;
+    transition: right 1s;
+}
+
+#menu li{
+    list-style: none;
+}
+
+#menu a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#menu a:hover{
+    color: #6A3093;
+}
+
+.menu-show{
+    right: 0;
+}
+
 header
 {
     display: flex;
